@@ -8,7 +8,21 @@
 			<interceptor name="log"
 				class="com.strut.ProfileInterceptor" />
 		</interceptors>
-	
+		
+		<action name="strutLogin"  class="com.strut.LoginStrutAction"
+			method="checkUser">
+			<result name="good">welcome1.jsp</result>
+			<result name="bad">error1.jsp</result> 
+		</action>
+		
+		<action name="userAvailable"  class="com.strut.LoginStrutAction"
+			method="userAvailable">
+			<result name="good">welcome1.jsp</result>
+			<result name="bad">error1.jsp</result> 
+		</action>
+		
+		
+		
 		<action name="abcd" 
 		class="com.strut.FirstStrutAction"
 			method="login">
@@ -16,12 +30,6 @@
 			<result name="bad">error1.jsp</result> 
 		</action>
 		
-		<action name="strutlogin" 
-		class="com.strut.TestStrutAction"
-			method="login">
-			<result name="success">welcome.jsp</result>
-			<result name="failure">error.jsp</result> 
-		</action>
 		<!--  struts redirect/forward/text stream/json  -->
 		<action name="loginweb" class=
 		"com.strut.ProfileAction"
