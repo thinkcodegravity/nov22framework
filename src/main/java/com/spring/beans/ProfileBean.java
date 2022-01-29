@@ -47,6 +47,7 @@ public class ProfileBean {
 	}
 	public boolean update(String userid, String pwd) {
 		int i=ur.update(userid, pwd);
+		int x=10/0;
 		if(i==0)
 			return false;
 		else
@@ -59,4 +60,5 @@ public class ProfileBean {
 		else
 			return true;
 	}
+	
 }
