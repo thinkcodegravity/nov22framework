@@ -18,7 +18,7 @@ import com.hibernate.springdata.UsersEntity;
 @Component
 public class ProfileAspect  {
 
-	@Before("within(com.spring.beans.ProfileBean)")
+	@AfterThrowing("within(com.spring.beans.ProfileBean)")
 	public void getResponseTime( ) throws Throwable{
 		// ******************** SECURITY *************************
 		System.out.println("\n\n >>>>>>>>>>> PERFORMING SECURITY CHECK >>>>>>>>>>>");

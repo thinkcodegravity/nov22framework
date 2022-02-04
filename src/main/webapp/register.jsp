@@ -5,7 +5,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="register" method="post">
+	<form action="registeration" method="get">
 		<input type="text" name="userid"/>
 		<input type="password" name="pwd"/>
 		<input type="submit" />

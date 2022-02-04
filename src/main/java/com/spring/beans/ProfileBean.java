@@ -46,8 +46,10 @@ public class ProfileBean {
 		ur.save(ue);
 	}
 	public boolean update(String userid, String pwd) {
+		
+		List<UsersEntity> addressResult=ur.findByFirstNameAndLastName("michael","moe");
+		
 		int i=ur.update(userid, pwd);
-		int x=10/0;
 		if(i==0)
 			return false;
 		else
@@ -60,5 +62,4 @@ public class ProfileBean {
 		else
 			return true;
 	}
-	
 }

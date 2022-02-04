@@ -27,8 +27,6 @@ public class LoginStrutAction implements ServletRequestAware {
 		// access session using servlet object, provided by servletrequestawre interface
 		httpReq.getSession().setAttribute("login", true);
 		// access sesion using strut action context
-		((Map)ActionContext.getContext(). getSession() ).put("sessionData","session set");
-		
 		//httpReq.getServletContext().setAttribute("", "");
 		
 

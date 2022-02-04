@@ -76,7 +76,6 @@ public class ProfileAction extends ActionSupport implements ServletRequestAware 
 		return SUCCESS;
 	}
 	public String register() throws Exception {
-		
 		pb.register(userid, pwd);
 		inputStream = new StringBufferInputStream("success");
 		return SUCCESS;
